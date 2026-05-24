@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # ResearchGraph RAG
 
 A LangGraph-powered research paper assistant that allows users to query, summarise, compare, and retrieve sources from a local collection of PDF research papers.
