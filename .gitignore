@@ -1,0 +1,48 @@
+# Environment variables / secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+research_agent/
+
+# Conda environment files if exported locally
+*.conda
+
+# macOS
+.DS_Store
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Chroma vector database
+vector_db/
+chroma/
+*.sqlite3
+
+# Local memory / runtime state
+memory.json
+
+# Uploaded PDFs / private research papers
+data/
+*.pdf
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/

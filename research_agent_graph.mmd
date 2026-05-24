@@ -1,0 +1,26 @@
+flowchart TD
+    A([START]) --> B[check_intent]
+
+    B --> C{Should continue?}
+
+    C -->|No / quit command| Z([END])
+    C -->|Yes| D[load_memory]
+
+    D --> E[rewrite_question]
+    E --> F[classify_intent]
+    F --> G[retrieve_documents]
+    G --> H[build_context]
+
+    H --> I{Route by intent}
+
+    I -->|direct_answer| J[generate_direct_answer]
+    I -->|summary| K[generate_summary_answer]
+    I -->|comparison| L[generate_comparison_answer]
+    I -->|list_sources| M[generate_sources_answer]
+
+    J --> N[save_memory]
+    K --> N
+    L --> N
+    M --> N
+
+    N --> Z([END])
